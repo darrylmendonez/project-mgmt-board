@@ -2,31 +2,49 @@ import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 
-const itemsFromBackend = [
-  {id: uuidv4(), content: 'First task'},
-  { id: uuidv4(), content: 'Second task'}
+const initialBacklog = [
+  { id: uuidv4(), content: 'Create services page'},
+  { id: uuidv4(), content: 'Create about page'},
+  { id: uuidv4(), content: 'Create contact page'},
 ];
+
+const initialToDo = [
+  { id: uuidv4(), content: 'Create products page'},
+]
+
+const initialInProgress = [
+  { id: uuidv4(), content: 'Create jumbotron for homepage'},
+  { id: uuidv4(), content: 'Create cards for each subpage on homepage'},
+]
+
+const initialReview = [
+  {id: uuidv4(), content: 'Create navbar'},
+]
+
+const initialDone = [
+  {id: uuidv4(), content: 'Create footerbar'},
+]
 
 const columnsFromBackend = {
   [uuidv4()]: {
     name: 'Backlog',
-    items: itemsFromBackend
+    items: initialBacklog
   },
   [uuidv4()]: {
     name: 'To Do',
-    items: []
+    items: initialToDo
   },
   [uuidv4()]: {
     name: 'In Progress',
-    items: []
+    items: initialInProgress
   },
   [uuidv4()]: {
     name: 'Review',
-    items: []
+    items: initialReview
   },
   [uuidv4()]: {
     name: 'Done',
-    items: []
+    items: initialDone
   }
 }
 
