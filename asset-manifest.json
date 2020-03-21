@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.js": "/project-mgmt-board/static/js/main.ebbdaac5.chunk.js",
-    "main.js.map": "/project-mgmt-board/static/js/main.ebbdaac5.chunk.js.map",
+    "main.css": "/project-mgmt-board/static/css/main.14b92a9d.chunk.css",
+    "main.js": "/project-mgmt-board/static/js/main.d2bf1601.chunk.js",
+    "main.js.map": "/project-mgmt-board/static/js/main.d2bf1601.chunk.js.map",
     "runtime-main.js": "/project-mgmt-board/static/js/runtime-main.1b22670c.js",
     "runtime-main.js.map": "/project-mgmt-board/static/js/runtime-main.1b22670c.js.map",
-    "static/js/2.781279a4.chunk.js": "/project-mgmt-board/static/js/2.781279a4.chunk.js",
-    "static/js/2.781279a4.chunk.js.map": "/project-mgmt-board/static/js/2.781279a4.chunk.js.map",
+    "static/js/2.9daec706.chunk.js": "/project-mgmt-board/static/js/2.9daec706.chunk.js",
+    "static/js/2.9daec706.chunk.js.map": "/project-mgmt-board/static/js/2.9daec706.chunk.js.map",
     "index.html": "/project-mgmt-board/index.html",
-    "precache-manifest.9634210954dcb59715bf60a52543d373.js": "/project-mgmt-board/precache-manifest.9634210954dcb59715bf60a52543d373.js",
+    "precache-manifest.61e35d41807a4bf70a4211c86311f6f3.js": "/project-mgmt-board/precache-manifest.61e35d41807a4bf70a4211c86311f6f3.js",
     "service-worker.js": "/project-mgmt-board/service-worker.js",
-    "static/js/2.781279a4.chunk.js.LICENSE.txt": "/project-mgmt-board/static/js/2.781279a4.chunk.js.LICENSE.txt"
+    "static/css/main.14b92a9d.chunk.css.map": "/project-mgmt-board/static/css/main.14b92a9d.chunk.css.map",
+    "static/js/2.9daec706.chunk.js.LICENSE.txt": "/project-mgmt-board/static/js/2.9daec706.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1b22670c.js",
-    "static/js/2.781279a4.chunk.js",
-    "static/js/main.ebbdaac5.chunk.js"
+    "static/js/2.9daec706.chunk.js",
+    "static/css/main.14b92a9d.chunk.css",
+    "static/js/main.d2bf1601.chunk.js"
   ]
 }
