@@ -5,24 +5,24 @@ import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 const initialBacklog = [
   { id: uuidv4(), content: 'Create services page'},
   { id: uuidv4(), content: 'Create about page'},
-  { id: uuidv4(), content: 'Create contact page'},
+  { id: uuidv4(), content: 'Create contact page'}
 ];
 
 const initialToDo = [
-  { id: uuidv4(), content: 'Create products page'},
+  { id: uuidv4(), content: 'Create products page'}
 ]
 
 const initialInProgress = [
   { id: uuidv4(), content: 'Create jumbotron for homepage'},
-  { id: uuidv4(), content: 'Create cards for each subpage on homepage'},
+  { id: uuidv4(), content: 'Create cards for each subpage on homepage'}
 ]
 
 const initialReview = [
-  {id: uuidv4(), content: 'Create navbar'},
+  {id: uuidv4(), content: 'Create navbar'}
 ]
 
 const initialDone = [
-  {id: uuidv4(), content: 'Create footerbar'},
+  {id: uuidv4(), content: 'Create footerbar'}
 ]
 
 const columnsFromBackend = {
