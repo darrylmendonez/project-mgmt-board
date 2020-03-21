@@ -22,7 +22,8 @@ const initialReview = [
 ]
 
 const initialDone = [
-  {id: uuidv4(), content: 'Create footerbar'}
+  {id: uuidv4(), content: 'Create footerbar'},
+  {id: uuidv4(), content: 'Review wireframe: <a href="https://compassionate-roentgen-1b3083.netlify.com/" target="_blank">https://compassionate-roentgen-1b3083.netlify.com/</a>'}
 ]
 
 const columnsFromBackend = {
@@ -101,7 +102,7 @@ function App() {
                         {...provided.droppableProps}
                         ref={provided.innerRef}
                         style={{
-                          background: snapshot.isDraggingOver ? 'lightblue' : 'lightgrey',
+                          background: snapshot.isDraggingOver ? '#ffab00' : 'lightgrey',
                           padding: 4,
                           width: 250,
                           minHeight: 500
@@ -121,12 +122,12 @@ function App() {
                                     padding: 16,
                                     margin: '0 0 8px 0',
                                     minHeight: '50px',
-                                    backgroundColor: snapshot.isDragging ? '#263B4A' : '#456C86',
-                                    color: 'white',
+                                    backgroundColor: snapshot.isDragging ? '#ffcc80' : '#ffe57f',
+                                    color: 'black',
                                     ...provided.draggableProps.style
                                   }}
                                   >
-                                    {item.content}
+                                    <span dangerouslySetInnerHTML={{__html: item.content}} ></span>
                                   </div>
                                 )
                               }}
