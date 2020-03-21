@@ -9,21 +9,31 @@ const itemsFromBackend = [
 
 const columnsFromBackend = {
   [uuidv4()]: {
-    name: 'Todo',
+    name: 'Backlog',
     items: itemsFromBackend
   },
   [uuidv4()]: {
+    name: 'To Do',
+    items: []
+  },
+  [uuidv4()]: {
     name: 'In Progress',
+    items: []
+  },
+  [uuidv4()]: {
+    name: 'Review',
+    items: []
+  },
+  [uuidv4()]: {
+    name: 'Done',
     items: []
   }
 }
 
 const onDragEnd = (result, columns, setColumns) => {
-  console.log('onDragEnd fired');
   if (!result.destination) return;
   const { source, destination } = result;
   if (source.droppableId !== destination.droppableId) {
-    console.log('if fired');
     const sourceColumn = columns[source.droppableId];
     const destColumn = columns[destination.droppableId];
     const sourceItems = [...sourceColumn.items];
@@ -42,7 +52,6 @@ const onDragEnd = (result, columns, setColumns) => {
       }
     })
   } else {
-    console.log('else fired');
     const column = columns[source.droppableId];
     const copiedItems = [...column.items]
     const[removed] = copiedItems.splice(source.index, 1);
