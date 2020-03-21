@@ -1,4 +1,5 @@
 {
+  "homepage": "https://darrylmendonez.github.io/project-mgmt-board/",
   "name": "project-mgmt-board",
   "version": "0.1.0",
   "private": true,
@@ -42,6 +43,5 @@
   },
   "devDependencies": {
     "gh-pages": "^2.2.0"
-  },
-  "homepage": "https://darrylmendonez.github.io/project-mgmt-board/"
+  }
 }
